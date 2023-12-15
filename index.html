@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matthew Byrne - Software Developer</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+
+<body>
+
+    <!-- Hero Section -->
+    <div class="hero-section" style="background-image: url('/banner1.jpeg');">
+        <div class="hero-content">
+            <img src="/profile.jpg" alt="Matthew Byrne" class="hero-image">
+            <h1 class="hero-title">Matthew Byrne</h1>
+            <p class="hero-subtitle">Software Developer</p>
+            <div class="contact-section">
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <p>Age: 25 Years</p>
+                    </div>
+                    <div class="contact-item">
+                        <img src="email.png" alt="Email Icon">
+                        <!-- Make the email clickable by using the mailto: scheme -->
+                        <a href="mailto:matthewbyrne555@yahoo.com">Email</a>
+                    </div>
+                    <div class="contact-item">
+                        <img src="linkedin.png" alt="LinkedIn Icon">
+                        <a href="https://www.linkedin.com/in/matthewbyrnex/">LinkedIn Profile</a>
+                    </div>
+                    <div class="contact-item">
+                        <img src="phone.png" alt="Phone Icon">
+                        <p>085-184-3349</p>
+                    </div>
+                    <div class="contact-item">
+                        <img src="loc.png" alt="Location Icon">
+                        <p>Dublin, Ireland</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="nav nav-tabs hero-nav">
+            <a class="nav-link" href="#education">Education</a>
+            <a class="nav-link" href="#experience">Work Experience</a>
+            <a class="nav-link" href="#projects">Projects</a>
+            <a class="nav-link" href="#skills">Skills</a>
+            <a class="nav-link" href="#about">About</a>
+
+        </nav>
+    </div>
+
+    <br>
+
+    <!-- Education Section -->
+    <section id="education" class="container mt-5">
+    <h2>Education</h2>
+
+        <!-- Button trigger modal -->
+        <div class="row">
+            <div class="col-md-4">
+                <!-- College Logo -->
+                <div class="text-center mb-3">
+                    <img src="tud.png" alt="Technological University Dublin" class="img-fluid">
+                </div>
+                <!-- College Info -->
+                <h3 style="text-align: center;">Technological University Dublin</h3>
+                <p style="text-align: center;">Bachelor of Science</p>
+                <p style="text-align: center;">Computer Science with Software Development</p>
+                <p style="text-align: center;">2020 - 2024</p>
+                <!-- Year Buttons -->
+                <div class="years-buttons">
+                    <button class="btn btn-outline-secondary" type="button" onclick="showTab('year1')">Year 1</button>
+                    <button class="btn btn-outline-secondary" type="button" onclick="showTab('year2')">Year 2</button>
+                    <button class="btn btn-outline-secondary" type="button" onclick="showTab('year3')">Year 3</button>
+                    <button class="btn btn-outline-secondary" type="button" onclick="showTab('year4')">Year 4</button>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="tab-content">
+                    <!-- Year 1 Content -->
+                    <div class="tab-pane fade" id="list-year1" role="tabpanel">
+                        <div class="semester-details">
+                            <h4>Semester 1</h4>
+                            <ul>
+                                <li>Critical Skills Development - A</li>
+                                <li>Visual Design & User Experience - A</li>
+                                <li>Business & Information Systems - A</li>
+                                <li>Discrete Mathematics 1 - A</li>
+                                <li>Computer Architecture - B+</li>
+                                <li>Software Development 1 - B+</li>
+                            </ul>
+                        </div>
+                        <div class="semester-details">
+                            <h4>Semester 2</h4>
+                            <ul>
+                                <li>Social Media Communications - B+</li>
+                                <li>Systems Analysis - B+</li>
+                                <li>Database Fundamentals - A</li>
+                                <li>Statistics - A</li>
+                                <li>Operating Systems Fundamentals - A</li>
+                                <li>Software Development 2 - A</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Year 2 Content -->
+                    <div class="tab-pane fade" id="list-year2" role="tabpanel">
+                        <div class="semester-details">
+                            <h4>Semester 3</h4>
+                            <ul>
+                                <li>Project - B+</li>
+                                <li>Data Administration and Analysis - B</li>
+                                <li>Management Science - A</li>
+                                <li>Routing & Switching Essentials - C</li>
+                                <li>Information Security - C+</li>
+                                <li>Software Development 3 - B+</li>
+                            </ul>
+                        </div>
+                        <div class="semester-details">
+                            <h4>Semester 4</h4>
+                            <ul>
+                                <li>Software Quality Assurance and Testing - A</li>
+                                <li>Client-Side Web Development - B</li>
+                                <li>Database Technologies - B</li>
+                                <li>Discrete Mathematics 2 - A</li>
+                                <li>Network Fundamentals - B+</li>
+                                <li>Software Development 4 - C+</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Year 3 Content -->
+                    <div class="tab-pane fade" id="list-year3" role="tabpanel">
+                        <div class="semester-details">
+                            <h4>Semester 5</h4>
+                            <ul>
+                                <li>Cloud Services & Distributed Computing - B-</li>
+                                <li>Server-Side Web Development - B</li>
+                                <li>Big Data Technologies - B</li>
+                                <li>Data Structures and Algorithms - B+</li>
+                                <li>Operating Systems - C+</li>
+                                <li>Data Analysis - B+</li>
+                            </ul>
+                        </div>
+                        <div class="semester-details">
+                            <h4>Semester 6</h4>
+                            <ul>
+                                <li>Work Placement - Pass</li>
+                                <!-- Add more courses here if necessary -->
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Year 4 Content -->
+                    <div class="tab-pane fade" id="list-year4" role="tabpanel">
+                        <div class="semester-details">
+                            <h4>Semester 7</h4>
+                            <ul>
+                                <li>Enterprise Applications Development 1 - A</li>
+                                <li>Enterprise Performance Architecture - B+</li>
+                                <li>Applied Machine Learning - A</li>
+                                <li>Interactive Design & Visualisation - B+</li>
+                                <li>Information Management - B+</li>
+                                <li>Project - B+</li>
+                            </ul>
+                        </div>
+                        <div class="semester-details">
+                            <h4>Semester 8</h4>
+                            <ul>
+                                <li>Enterprise Applications Development 2 - A</li>
+                                <li>Computational Theory - B+</li>
+                                <li>Applied Artificial Intelligence and Deep Learning - B+</li>
+                                <li>Interactive Design & Visualisation - B+</li>
+                                <li>Project - B+</li>
+                                <!-- Include additional courses if there are any -->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work Experience Section -->
+    <section id="experience" class="container mt-5">
+    <h2>Work Experience</h2>
+
+        
+        <div class="row">
+            <!-- Software Engineer Intern -->
+            <div class="col-md-6 col-lg-4 mb-3  experience-box">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Software Engineer Intern</h5>
+                        <p class="card-text">Guidewire Software · Full-time</p>
+                        <p class="card-text">Jan 2023 - Jul 2023 · 7 mos</p>
+                        <p class="card-text">County Dublin, Ireland · Hybrid</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Bartender -->
+            <div class="col-md-6 col-lg-4 mb-3  experience-box">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Bartender</h5>
+                        <p class="card-text">The Step Inn · Part-time</p>
+                        <p class="card-text">Jul 2021 - Present · 2 yrs 6 mos</p>
+                        <p class="card-text">Stepaside, Dublin</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Assistant Manager -->
+            <div class="col-md-6 col-lg-4 mb-3 experience-box">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Assistant Manager</h5>
+                        <p class="card-text">Five Guys Europe · Full-time</p>
+                        <p class="card-text">Jun 2017 - Sep 2021 · 4 yrs 4 mos</p>
+                        <p class="card-text">County Dublin, Ireland</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="container mt-5">
+        <h2>Projects</h2>
+        <div class="accordion" id="projectsAccordion">
+            <!-- Project 1: V2-UI -->
+            <div class="card">
+                <div class="card-header" id="headingOne">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link stretched-link" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            V2-UI
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-bs-parent="#projectsAccordion">
+                    <div class="card-body">
+                        <p>V2-UI is an innovative concept aimed at streamlining the website creation process for software consultants. By generating websites from live transcripts, it minimizes the back-and-forth between clients and consultants, fostering a more efficient workflow.</p>
+                        <!-- Embed YouTube Video Here -->
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/ux0XvvMwntw" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+            <!-- Project 2: SkillPath -->
+            <div class="card">
+                <div class="card-header" id="headingTwo">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link stretched-link" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            SkillPath
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-bs-parent="#projectsAccordion">
+                    <div class="card-body">
+                        <p>Conceived during a Guidewire Hackathon, SkillPath™ is a dashboard designed to promote accountability and the value of meaningful work. My team, Coding Avocados 🥑, earned first place with this interactive concept, demonstrating our commitment to innovation and teamwork.</p>
+                        <!-- Display Three Images Here -->
+                        <div class="project-images">
+                            <img src="one.jpeg" alt="Image 1">
+                            <img src="two.jpeg" alt="Image 2">
+                            <img src="three.jpeg" alt="Image 3">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Project 3: Happy Tails -->
+            <div class="card">
+                <div class="card-header" id="headingThree">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link stretched-link" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Happy Tails
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-bs-parent="#projectsAccordion">
+                    <div class="card-body">
+                        <p>Happy Tails is a compassionate dog rescue app that brings hope to canines in need. Users can explore profiles of adorable shelter dogs, purchase canine supplies, and book tiered training classes, all facilitated by a secure Stripe payment system.</p>
+                        <!-- Display One Image Here -->
+                        <div class="project-images">
+                            <img src="dogrescue.png" alt="Happy Tails Image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Project 4: Dependency Vulnerability Checker -->
+            <div class="card">
+                <div class="card-header" id="headingFour">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link stretched-link" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            Dependency Vulnerability Checker
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-bs-parent="#projectsAccordion">
+                    <div class="card-body">
+                        <p>Dependency Vulnerability Checker: Developed in my final year at Technological University Dublin, in partnership with Bank of America, this web application offers a robust solution for cybersecurity and dependency management. It features secure user authentication and a file upload portal for dependency files. The app scans these files for vulnerabilities, offering solutions for identified issues. Each analysis is saved to the user’s account, allowing for ongoing monitoring and updates on new vulnerabilities. Additionally, the app includes a cyber security feature for scanning files and URLs for malware, adding another layer of protection. This project represents a synergy of academic knowledge and real-world application, emphasizing proactive cybersecurity in software development.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    
+    <!-- Skills Section -->
+    <section id="skills" class="container mt-5 shadow p-3 mb-5 bg-white rounded">
+        <h2 class="text-center">Professional Skills</h2>
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="skill">
+                    <label>HTML</label>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="87" aria-valuemin="0" aria-valuemax="100" style="width: 0%;">Master</div>
+                    </div>
+                </div>
+                <!-- Other skills for HTML here -->
+            </div>
+            <div class="col-lg-4">
+                <div class="skill">
+                    <label>CSS</label>
+                    <div class="progress">
+                        <div class="progress-bar bg-info" role="progressbar" aria-valuenow="87" aria-valuemin="0" aria-valuemax="100" style="width: 0%;">Expert</div>
+                    </div>
+                </div>
+                <!-- Other skills for CSS here -->
+            </div>
+            <div class="col-lg-4">
+                <div class="skill">
+                    <label>JavaScript</label>
+                    <div class="progress">
+                        <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="68" aria-valuemin="0" aria-valuemax="100" style="width: 0%;">Advanced</div>
+                    </div>
+                </div>
+                <!-- Other skills for JavaScript here -->
+            </div>
+            <!-- Repeat for other skills if necessary -->
+        </div>
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="skill">
+                    <label>Python</label>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 0%;">Master</div>
+                    </div>
+                </div>
+                <!-- Other skills for HTML here -->
+            </div>
+            <div class="col-lg-4">
+                <div class="skill">
+                    <label>C#</label>
+                    <div class="progress">
+                        <div class="progress-bar bg-info" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 0%;">Expert</div>
+                    </div>
+                </div>
+                <!-- Other skills for CSS here -->
+            </div>
+            <div class="col-lg-4">
+                <div class="skill">
+                    <label>Command Line Proficiency</label>
+                    <div class="progress">
+                        <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 0%;">Advanced</div>
+                    </div>
+                </div>
+                <!-- Other skills for JavaScript here -->
+            </div>
+            <!-- Repeat for other skills if necessary -->
+        </div>
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="skill">
+                    <label>Data Analysis</label>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 0%;">Master</div>
+                    </div>
+                </div>
+                <!-- Other skills for HTML here -->
+            </div>
+            <div class="col-lg-4">
+                <div class="skill">
+                    <label>Data Structures and Algorithms</label>
+                    <div class="progress">
+                        <div class="progress-bar bg-info" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 0%;">Expert</div>
+                    </div>
+                </div>
+                <!-- Other skills for CSS here -->
+            </div>
+            <div class="col-lg-4">
+                <div class="skill">
+                    <label>Operating Systems</label>
+                    <div class="progress">
+                        <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 0%;">Advanced</div>
+                    </div>
+                </div>
+                <!-- Other skills for JavaScript here -->
+            </div>
+            <!-- Repeat for other skills if necessary -->
+    </section>
+    
+    
+
+
+    
+    <!-- About Section -->
+    <section id="about" class="container mt-5">
+        <h2>About</h2>
+        <div class="row">
+            <!-- Left Column for Personal Info, Hobbies, Interests -->
+            <div class="col-lg-8">
+                <div class="about-details">
+                    
+                    <!-- Hobbies -->
+                    <h3 class="card-title">Hobbies</h3>
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <div class="hobbies-icons icon-container"> <!-- Added icon-container class -->
+                                <a href="https://www.youtube.com/watch?v=BnO5oS3xeEQ&ab_channel=MusicByLeech" target="_blank">
+                                    <img class="hobby-icon" src="drum.png" alt="Hobby 1"> <!-- Added hobby-icon class -->
+                                </a>
+                                <a href="https://www.alltrails.com/" target="_blank">
+                                    <img class="hobby-icon" src="hike.png" alt="Hobby 2"> <!-- Added hobby-icon class -->
+                                </a>
+                                <a href="https://www.youtube.com/@JeffNippard/videos" target="_blank">
+                                    <img class="hobby-icon" src="gym.png" alt="Hobby 3"> <!-- Added hobby-icon class -->
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="card-title">Interests</h3>
+                    <!-- Interests -->
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="interests-icons icon-container"> <!-- Added icon-container class -->
+                                <a href="https://www.youtube.com/watch?v=pXRviuL6vMY&ab_channel=FueledByRamen" target="_blank">
+                                    <img class="interest-icon" src="top.png" alt="Interest 1"> <!-- Added interest-icon class -->
+                                </a>
+                                <a href="https://www.youtube.com/watch?v=u-pP_dCenJA&ab_channel=ElvisPresleyVEVO" target="_blank">
+                                    <img class="interest-icon" src="elvis.png" alt="Interest 2"> <!-- Added interest-icon class -->
+                                </a>
+                                <a href="https://www.youtube.com/watch?v=of-Bqmlgj98&ab_channel=%E2%98%85TV-Series-OpeningCredits%2FIntro%E2%98%85" target="_blank">
+                                    <img class="interest-icon" src="twd.png" alt="Interest 3"> <!-- Added interest-icon class -->
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Right Column for Surprise Image -->
+            <div class="col-lg-4">
+                <div class="surprise-box">
+                    <button class="btn btn-custom" type="button" id="showSurprise">Click for Surprise</button>
+                    <div class="surprise-image mt-3" style="display: none;">
+                        <img src="dog.jpg" alt="Surprise Image" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>Matthew Byrne - © 2023</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,693 @@
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.hero-section {
+    height: 100vh;
+    background: no-repeat center center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    color: var(--starry-night-white);
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.hero-content {
+    position: relative;
+    /* Other existing styles... */
+}
+
+.contact-details {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Space between items */
+    padding-bottom: 20px; /* Space at the bottom */
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center content horizontally */
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    color: white; /* Text color */
+    padding: 5px 10px; /* Padding around text and icon */
+    border-radius: 15px; /* Rounded corners for the background */
+    width: 150px; /* Fixed width */
+    height: 40px; /* Fixed height */
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5); /* Text shadow for readability */
+}
+
+.contact-item img {
+    width: 20px; /* Icon size */
+    height: auto;
+    margin-right: 8px; /* Adjust this value to increase/decrease space between icon and text */
+}
+
+.contact-item a {
+    color: white; /* Text color */
+    text-decoration: none; /* No underline for links */
+    font-size: 0.9em; /* Font size */
+    /* Add other styles as necessary to match your design */
+}
+
+.contact-item a:hover,
+.contact-item a:focus {
+    text-decoration: underline; /* Adds underline on hover for visual feedback */
+    /* Add other hover effects as desired */
+}
+
+
+.contact-item a, 
+.contact-item p {
+    color: white; /* Text color */
+    text-decoration: none; /* No underline for links */
+    font-size: 0.9em; /* Font size */
+    margin: 0; /* Remove default margins */
+    white-space: nowrap; /* Keep text on one line */
+    overflow: hidden; /* Hide overflow */
+    text-overflow: ellipsis; /* Add ellipsis to text that overflows */
+}
+
+/* Add this to prevent flex items from growing or shrinking */
+.contact-item {
+    flex: 0 0 auto;
+}
+
+
+
+.hero-nav.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: -1;
+}
+
+.hero-content {
+    padding-bottom: 70px;
+    z-index: 2;
+}
+
+.hero-image {
+    max-width: 200px;
+    border-radius: 50%;
+    border: 4px solid var(--starry-night-white);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+}
+
+.hero-title {
+    font-size: 3.5em;
+    text-shadow: 2px 2px 8px rgb(178, 165, 165);
+}
+
+.hero-subtitle {
+    font-size: 2em;
+    text-shadow: 1px 1px 6px rgb(178, 165, 165);
+}
+
+.hero-nav {
+    width: 100%;
+    font-weight: bolder;
+    padding: 10px 0;
+    background-color: rgba(178, 165, 165, 0.7);
+    backdrop-filter: blur(10px);
+    font-family: 'Roboto', sans-serif; /* Use the imported font 'Roboto' */
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    transition: top 0.3s;
+    z-index: 10;
+}
+
+.nav-link {
+    margin: 0 15px;
+    color: var(--starry-night-yellow);
+    font-size: 1.1em;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.nav-link:hover, .nav-link:focus {
+    color: white);
+    transform: translateY(-2px);
+    text-decoration: none;
+}
+
+section {
+    border-bottom: 1px solid #ccc;
+    scroll-margin-top: 80px; /* 70px is the header's height, plus a little extra space */
+    text-align: center;
+    padding-bottom: 20px; /* Adjust as needed */
+    margin-bottom: 20px; /* Adjust as needed */
+}
+
+/* Style the h2 headings for better visibility */
+h2 {
+    scroll-margin-top: 80px; /* 70px is the header's height, plus a little extra space */
+    text-align: center;
+    text-align: center;
+    font-size: 2rem;  /* Adjust the size as you like */
+    font-weight: bold;  /* Optional: makes the text bold */
+    margin-top: 1rem;  /* Space above the h2 */
+    margin-bottom: 1rem;  /* Space below the h2 */
+    /* Other styling such as color, font-family, etc. */
+}
+
+
+.education-box, .experience-box {
+    border: 1px solid #ddd;
+    margin: 10px;
+    padding: 10px;
+    box-shadow: 0 0 10px #ccc;
+    flex-basis: calc(33.333% - 20px);
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: rgb(178, 165, 165);
+    color: white;
+}
+
+@media screen and (max-width: 600px) {
+    .education-box, .experience-box {
+        flex-basis: calc(50% - 20px);
+    }
+}
+
+
+
+/* SEMESTER BOX */
+
+
+
+#education {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+#education .college-info h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+#education .college-info p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 0.25rem;
+}
+
+#education .years-buttons .btn {
+    width: 100%;
+    margin-bottom: 0.5rem;
+    text-align: left;
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #ddd;
+    border-radius: 0; /* Rectangle shape */
+}
+
+#education .years-buttons .btn:hover, 
+#education .years-buttons .btn:focus {
+    background-color: #f8f9fa;
+    border-color: #ccc;
+}
+
+#education .tab-content {
+    border: 1px solid #ddd;
+    padding: 1rem;
+    height: 100%;
+    overflow-y: auto;
+}
+
+#education .tab-pane h4 {
+    font-size: 1.25rem;
+    color: #333;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+#education .tab-pane ul {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 0;
+}
+
+#education .tab-pane ul li {
+    font-size: 1rem;
+    color: #555;
+    padding: 0.25rem 0;
+    border-bottom: 1px solid #eee;
+}
+
+#education .tab-pane ul li:last-child {
+    border-bottom: none;
+}
+
+/* Styles for semester boxes (the detailed semester information) */
+.semester-box {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 20px;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.semester-box h4 {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+.semester-box ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.semester-box ul li {
+    padding: 5px 0;
+    border-bottom: 1px solid #eee;
+}
+
+/* Last child border removal */
+.semester-box ul li:last-child {
+    border-bottom: none;
+}
+
+
+#about {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.about-details, .surprise-box {
+    background-color: #f8f9fa;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.about-details h2, .about-details h3 {
+    color: #000000;
+    margin-bottom: 0.5rem;
+}
+
+.surprise-box button {
+    width: 100%;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.surprise-box button:hover {
+    background-color: #0056b3;
+}
+
+.surprise-box .surprise-image {
+    display: none;
+    text-align: center; /* Center align the image */
+}
+
+.surprise-box .surprise-image img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+/* Add spacing and styling for the icons */
+.hobbies-icons, .interests-icons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.hobbies-icons a, .interests-icons a {
+    text-decoration: none;
+    position: relative; /* Add relative positioning to the links */
+}
+
+.hobbies-icons img, .interests-icons img {
+    width: 120px;
+    height: 100px;
+    margin-right: 10px; /* Add spacing between icons */
+    transition: transform 0.2s; /* Add a transition for smoother hover effect */
+}
+
+/* Add a hover effect */
+.hobbies-icons a:hover img, .interests-icons a:hover img {
+    transform: scale(1.2); /* Scale the image on hover */
+}
+
+
+
+
+
+#education {
+    background-color: #ffffff; /* Changed to clean white background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+#education .college-logo img {
+    max-width: 80%; /* Adjust as necessary */
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+#education .college-info h2 {
+    font-size: 1.75rem;
+    color: #0056b3; /* TU Dublin's color theme */
+    font-weight: 600; /* Slightly bolder */
+    margin-bottom: 0.5rem;
+}
+
+#education .college-info p {
+    font-size: 1.1rem;
+    color: #333; /* Darker font for better readability */
+    margin-bottom: 0.25rem;
+    line-height: 1.4; /* More space between lines */
+}
+
+#education .years-buttons .btn {
+    width: 100%;
+    text-align: left;
+    font-size: 1.05rem; /* Larger font size for the buttons */
+    font-weight: 500; /* Medium weight font for better legibility */
+    padding: 0.75rem 1rem; /* Larger padding for a bigger button */
+    margin-bottom: 0.5rem;
+    border: 2px solid #ddd; /* Solid border for the buttons */
+    border-radius: 0.25rem; /* Slight rounding of the corners */
+    transition: all 0.3s; /* Smooth transition for hover effects */
+    background-color: #fff; /* Ensuring background is white */
+    color: #000; /* Text color */
+}
+
+#education .years-buttons .btn:hover, 
+#education .years-buttons .btn:focus {
+    color: #0056b3; /* Change color on hover/focus */
+    background-color: #f8f9fa;
+    border-color: #ccc;
+}
+
+#education .tab-content {
+    background-color: #f9f9f9; /* Slightly off-white for the content area */
+    border: 1px solid #ddd;
+    padding-top: 50px;
+    height: 100%;
+    overflow-y: auto;
+    border-radius: 0.25rem; /* Consistent border radius */
+}
+
+#education .tab-pane h4 {
+    font-size: 1.3rem; /* Larger heading for semesters */
+    color: #004185; /* TU Dublin's darker blue for contrast */
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #ddd;
+}
+
+#education .tab-pane ul {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 0;
+}
+
+#education .tab-pane ul li {
+    font-size: 1rem;
+    color: #333;
+    padding: 0.25rem 0;
+    border-bottom: 1px solid #eee;
+}
+
+#education .tab-pane ul li:last-child {
+    border-bottom: none;
+}
+
+#education .semester-details {
+    background-color: #fff; /* Ensuring background is white */
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+#education .semester-details h4 {
+    margin-bottom: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #007bff; /* Using TU Dublin's theme color */
+}
+
+#education .semester-details ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+#education .semester-details ul li {
+    padding: 0.25rem 0;
+    border-bottom: 1px solid #eee;
+}
+
+#education .semester-details ul li:last-child {
+    border-bottom: none;
+}
+
+.list-group-item-action.active {
+    background-color: #007bff;
+    border-color: #007bff;
+    color: white;
+}
+
+.list-group-item {
+    cursor: pointer;
+}
+
+/* Responsive adjustments for mobile views */
+@media (max-width: 768px) {
+    #education .college-logo img {
+        max-width: 100%;
+    }
+
+    #education .years-buttons .btn {
+        font-size: 1rem; /* Adjust the font size for smaller screens */
+    }
+}
+
+/* Icons */
+.hobby-icon,
+.interest-icon {
+    opacity: 0;
+    transform: scale(0.5) rotate(-90deg);
+    transition: opacity 0.9s, transform 0.9s;
+}
+
+.hobby-icon.in-view,
+.interest-icon.in-view {
+    opacity: 1;
+    transform: scale(1) rotate(0deg);
+}
+
+/* work section */
+.timeline {
+    position: relative;
+    padding-left: 30px;
+}
+
+.timeline-item {
+    margin-bottom: 20px;
+}
+
+.timeline-item .circle {
+    position: absolute;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: green;
+}
+
+.timeline-item .content {
+    margin-left: 30px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+}
+
+.timeline-item .content h3 {
+    margin-top: 0;
+    font-size: 1.2em;
+}
+
+.timeline-item .content p {
+    margin-bottom: 0;
+    font-size: 0.9em;
+}
+
+.card {
+    /* Add any specific styles for the card class here if not already defined */
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.card.active .collapse {
+    display: block; /* or use any other display property as per your design */
+}
+
+.card-title {
+    /* Any specific styles for the card title */
+    color: #333;
+    font-weight: bold;
+}
+
+.card-text {
+    /* Styles for the text inside the card */
+    color: #666;
+}
+
+/* Work experience boxes */
+.experience-box {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 2s, transform 2s;
+}
+
+.experience-box.in-view {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* Skills */
+
+
+.skill:last-child {
+    margin-bottom: 0; /* Remove the margin from the last skill in each column */
+}
+
+.skill {
+    margin-bottom: 1rem;
+}
+
+.progress {
+    background-color: #e1e1e1;
+    border-radius: 0.25rem;
+    height: 1rem; /* Adjust for thinner bars */
+}
+
+.progress-bar {
+    transition: width 2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    white-space: nowrap;
+    color: #fff; /* White text color */
+}
+
+/* Skill Level Specific Color Classes */
+.progress-bar-master {
+    background-color: #28a745; /* Green for Master */
+}
+
+.progress-bar-expert {
+    background-color: #17a2b8; /* Blue for Expert */
+}
+
+.progress-bar-advanced {
+    background-color: #ffc107; /* Yellow for Advanced */
+}
+
+.progress-bar-beginner {
+    background-color: #dc3545; /* Red for Beginner */
+}
+
+/* Remove the before pseudo-element that adds the percentage */
+.progress-bar::before {
+    content: none;
+}
+
+
+/* You can add a shadow to the container */
+.container {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Center-align the text and images within card bodies */
+.card-body {
+    text-align: center;
+}
+
+.project-images {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Vertically align the images */
+    margin-top: 10px;
+    overflow-x: auto;
+}
+
+.project-images img {
+    width: 390px; /* Adjust the width to your desired size */
+    height: 350px; /* Adjust the height to maintain the aspect ratio */
+    margin: 0 5px; /* Add some spacing between images */
+}
+.btn.btn-custom {
+    color: white;
+}
+
+/* Change button background color to a different color */
+.btn.btn-custom {
+    background-color:  rgb(178, 165, 165); /* Replace with your desired color code */
+    border-color: #your-desired-color; /* Optional: Set border color to match */
+}
+
+.btn-link {
+    background-color: transparent; /* Remove any background color */
+    color: #000; /* Set your desired text color, e.g., black */
+    text-decoration: none; /* Remove underline */
+    font-weight: normal; /* Set the font weight to normal if you don't want bold */
+    font-size: 1em; /* Set an appropriate font size */
+    border: none; /* Remove border */
+    padding: 0; /* Remove padding */
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.btn-link:hover,
+.btn-link:focus {
+    color: #0056b3; /* Set the color for hover and focus */
+    background-color: transparent; /* Ensure background doesn't change on hover */
+    text-decoration: none; /* Ensure text doesn't get underlined on hover */
+    border: none; /* Ensure border doesn't appear on hover */
+}
+
