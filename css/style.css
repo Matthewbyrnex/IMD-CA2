@@ -23,66 +23,59 @@ body {
 
 .hero-content {
     position: relative;
-    /* Other existing styles... */
 }
 
 .contact-details {
     display: flex;
     justify-content: center;
-    gap: 10px; /* Space between items */
-    padding-bottom: 20px; /* Space at the bottom */
+    gap: 10px; 
+    padding-bottom: 20px;
 }
 
 .contact-item {
     display: flex;
     align-items: center;
-    justify-content: center; /* Center content horizontally */
-    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
-    color: white; /* Text color */
-    padding: 5px 10px; /* Padding around text and icon */
-    border-radius: 15px; /* Rounded corners for the background */
-    width: 150px; /* Fixed width */
-    height: 40px; /* Fixed height */
-    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5); /* Text shadow for readability */
+    justify-content: center; 
+    background: rgba(0, 0, 0, 0.5);
+    color: white; 
+    padding: 5px 10px; 
+    border-radius: 15px; 
+    width: 150px; 
+    height: 40px;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
 }
 
 .contact-item img {
-    width: 20px; /* Icon size */
+    width: 20px; 
     height: auto;
-    margin-right: 8px; /* Adjust this value to increase/decrease space between icon and text */
+    margin-right: 8px; 
 }
 
 .contact-item a {
-    color: white; /* Text color */
-    text-decoration: none; /* No underline for links */
-    font-size: 0.9em; /* Font size */
-    /* Add other styles as necessary to match your design */
+    color: white;
+    text-decoration: none;
+    font-size: 0.9em;
 }
 
 .contact-item a:hover,
 .contact-item a:focus {
-    text-decoration: underline; /* Adds underline on hover for visual feedback */
-    /* Add other hover effects as desired */
+    text-decoration: underline;
 }
-
 
 .contact-item a, 
 .contact-item p {
-    color: white; /* Text color */
-    text-decoration: none; /* No underline for links */
-    font-size: 0.9em; /* Font size */
-    margin: 0; /* Remove default margins */
-    white-space: nowrap; /* Keep text on one line */
-    overflow: hidden; /* Hide overflow */
-    text-overflow: ellipsis; /* Add ellipsis to text that overflows */
+    color: white;
+    text-decoration: none;
+    font-size: 0.9em;
+    margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
-/* Add this to prevent flex items from growing or shrinking */
 .contact-item {
     flex: 0 0 auto;
 }
-
-
 
 .hero-nav.sticky {
     position: fixed;
@@ -129,7 +122,7 @@ body {
     padding: 10px 0;
     background-color: rgba(178, 165, 165, 0.7);
     backdrop-filter: blur(10px);
-    font-family: 'Roboto', sans-serif; /* Use the imported font 'Roboto' */
+    font-family: 'Roboto', sans-serif;
 }
 
 .nav {
@@ -147,31 +140,27 @@ body {
 }
 
 .nav-link:hover, .nav-link:focus {
-    color: white);
+    color: white;
     transform: translateY(-2px);
     text-decoration: none;
 }
 
 section {
     border-bottom: 1px solid #ccc;
-    scroll-margin-top: 80px; /* 70px is the header's height, plus a little extra space */
+    scroll-margin-top: 80px;
     text-align: center;
-    padding-bottom: 20px; /* Adjust as needed */
-    margin-bottom: 20px; /* Adjust as needed */
+    padding-bottom: 20px;
+    margin-bottom: 20px;
 }
 
-/* Style the h2 headings for better visibility */
 h2 {
-    scroll-margin-top: 80px; /* 70px is the header's height, plus a little extra space */
+    scroll-margin-top: 80px;
     text-align: center;
-    text-align: center;
-    font-size: 2rem;  /* Adjust the size as you like */
-    font-weight: bold;  /* Optional: makes the text bold */
-    margin-top: 1rem;  /* Space above the h2 */
-    margin-bottom: 1rem;  /* Space below the h2 */
-    /* Other styling such as color, font-family, etc. */
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
-
 
 .education-box, .experience-box {
     border: 1px solid #ddd;
@@ -194,12 +183,6 @@ footer {
         flex-basis: calc(50% - 20px);
     }
 }
-
-
-
-/* SEMESTER BOX */
-
-
 
 #education {
     background-color: #f8f9fa;
@@ -227,7 +210,7 @@ footer {
     background-color: #fff;
     color: #000;
     border: 1px solid #ddd;
-    border-radius: 0; /* Rectangle shape */
+    border-radius: 0;
 }
 
 #education .years-buttons .btn:hover, 
@@ -268,7 +251,6 @@ footer {
     border-bottom: none;
 }
 
-/* Styles for semester boxes (the detailed semester information) */
 .semester-box {
     border: 1px solid #ddd;
     padding: 15px;
@@ -293,11 +275,9 @@ footer {
     border-bottom: 1px solid #eee;
 }
 
-/* Last child border removal */
 .semester-box ul li:last-child {
     border-bottom: none;
 }
-
 
 #about {
     background-color: #ffffff;
@@ -338,7 +318,7 @@ footer {
 
 .surprise-box .surprise-image {
     display: none;
-    text-align: center; /* Center align the image */
+    text-align: center;
 }
 
 .surprise-box .surprise-image img {
@@ -346,7 +326,6 @@ footer {
     border-radius: 5px;
 }
 
-/* Add spacing and styling for the icons */
 .hobbies-icons, .interests-icons {
     display: flex;
     justify-content: space-between;
@@ -355,44 +334,40 @@ footer {
 
 .hobbies-icons a, .interests-icons a {
     text-decoration: none;
-    position: relative; /* Add relative positioning to the links */
+    position: relative;
 }
 
 .hobbies-icons img, .interests-icons img {
     width: 120px;
     height: 100px;
-    margin-right: 10px; /* Add spacing between icons */
-    transition: transform 0.2s; /* Add a transition for smoother hover effect */
+    margin-right: 10px;
+    transition: transform 0.2s;
 }
 
-/* Add a hover effect */
 .hobbies-icons a:hover img, .interests-icons a:hover img {
-    transform: scale(1.2); /* Scale the image on hover */
+    transform: scale(1.2);
 }
-
-
-
-
 
 #education {
-    background-color: #ffffff; /* Changed to clean white background */
+    background-color: #ffffff;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
 }
 
 #education .college-logo img {
-    max-width: 80%; /* Adjust as necessary */
+    max-width: 80%;
     height: auto;
     margin-bottom: 1rem;
 }
 
 #education .college-info h2 {
     font-size: 1.75rem;
-    color: #0056b3; /* TU Dublin's color theme */
-    font-weight: 600; /* Slightly bolder */
+    color: #0056b3;
+    font-weight: 600;
     margin-bottom: 0.5rem;
 }
+
 
 #education .college-info p {
     font-size: 1.1rem;
@@ -401,39 +376,46 @@ footer {
     line-height: 1.4; /* More space between lines */
 }
 
+#education .college-info p {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 0.25rem;
+    line-height: 1.4;
+}
+
 #education .years-buttons .btn {
     width: 100%;
     text-align: left;
-    font-size: 1.05rem; /* Larger font size for the buttons */
-    font-weight: 500; /* Medium weight font for better legibility */
-    padding: 0.75rem 1rem; /* Larger padding for a bigger button */
+    font-size: 1.05rem;
+    font-weight: 500;
+    padding: 0.75rem 1rem;
     margin-bottom: 0.5rem;
-    border: 2px solid #ddd; /* Solid border for the buttons */
-    border-radius: 0.25rem; /* Slight rounding of the corners */
-    transition: all 0.3s; /* Smooth transition for hover effects */
-    background-color: #fff; /* Ensuring background is white */
-    color: #000; /* Text color */
+    border: 2px solid #ddd;
+    border-radius: 0.25rem;
+    transition: all 0.3s;
+    background-color: #fff;
+    color: #000;
 }
 
 #education .years-buttons .btn:hover, 
 #education .years-buttons .btn:focus {
-    color: #0056b3; /* Change color on hover/focus */
+    color: #0056b3;
     background-color: #f8f9fa;
     border-color: #ccc;
 }
 
 #education .tab-content {
-    background-color: #f9f9f9; /* Slightly off-white for the content area */
+    background-color: #f9f9f9;
     border: 1px solid #ddd;
     padding-top: 50px;
     height: 100%;
     overflow-y: auto;
-    border-radius: 0.25rem; /* Consistent border radius */
+    border-radius: 0.25rem;
 }
 
 #education .tab-pane h4 {
-    font-size: 1.3rem; /* Larger heading for semesters */
-    color: #004185; /* TU Dublin's darker blue for contrast */
+    font-size: 1.3rem;
+    color: #004185;
     margin-bottom: 1rem;
     padding-bottom: 0.5rem;
     border-bottom: 2px solid #ddd;
@@ -457,7 +439,7 @@ footer {
 }
 
 #education .semester-details {
-    background-color: #fff; /* Ensuring background is white */
+    background-color: #fff;
     margin-bottom: 1rem;
     padding: 1rem;
     border-radius: 5px;
@@ -467,7 +449,7 @@ footer {
 #education .semester-details h4 {
     margin-bottom: 0.5rem;
     padding-bottom: 0.5rem;
-    border-bottom: 2px solid #007bff; /* Using TU Dublin's theme color */
+    border-bottom: 2px solid #007bff;
 }
 
 #education .semester-details ul {
@@ -501,7 +483,7 @@ footer {
     }
 
     #education .years-buttons .btn {
-        font-size: 1rem; /* Adjust the font size for smaller screens */
+        font-size: 1rem;
     }
 }
 
@@ -557,22 +539,19 @@ footer {
 }
 
 .card {
-    /* Add any specific styles for the card class here if not already defined */
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
 }
 
 .card.active .collapse {
-    display: block; /* or use any other display property as per your design */
+    display: block;
 }
 
 .card-title {
-    /* Any specific styles for the card title */
     color: #333;
     font-weight: bold;
 }
 
 .card-text {
-    /* Styles for the text inside the card */
     color: #666;
 }
 
@@ -588,12 +567,9 @@ footer {
     transform: translateY(0);
 }
 
-
 /* Skills */
-
-
 .skill:last-child {
-    margin-bottom: 0; /* Remove the margin from the last skill in each column */
+    margin-bottom: 0;
 }
 
 .skill {
@@ -603,7 +579,7 @@ footer {
 .progress {
     background-color: #e1e1e1;
     border-radius: 0.25rem;
-    height: 1rem; /* Adjust for thinner bars */
+    height: 1rem;
 }
 
 .progress-bar {
@@ -613,38 +589,34 @@ footer {
     justify-content: center;
     text-align: center;
     white-space: nowrap;
-    color: #fff; /* White text color */
+    color: #fff;
 }
 
 /* Skill Level Specific Color Classes */
 .progress-bar-master {
-    background-color: #28a745; /* Green for Master */
+    background-color: #28a745;
 }
 
 .progress-bar-expert {
-    background-color: #17a2b8; /* Blue for Expert */
+    background-color: #17a2b8;
 }
 
 .progress-bar-advanced {
-    background-color: #ffc107; /* Yellow for Advanced */
+    background-color: #ffc107;
 }
 
 .progress-bar-beginner {
-    background-color: #dc3545; /* Red for Beginner */
+    background-color: #dc3545;
 }
 
-/* Remove the before pseudo-element that adds the percentage */
 .progress-bar::before {
     content: none;
 }
 
-
-/* You can add a shadow to the container */
 .container {
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
-/* Center-align the text and images within card bodies */
 .card-body {
     text-align: center;
 }
@@ -652,42 +624,37 @@ footer {
 .project-images {
     display: flex;
     justify-content: center;
-    align-items: center; /* Vertically align the images */
+    align-items: center;
     margin-top: 10px;
     overflow-x: auto;
 }
 
 .project-images img {
-    width: 390px; /* Adjust the width to your desired size */
-    height: 350px; /* Adjust the height to maintain the aspect ratio */
-    margin: 0 5px; /* Add some spacing between images */
-}
-.btn.btn-custom {
-    color: white;
+    width: 390px;
+    height: 350px;
+    margin: 0 5px;
 }
 
-/* Change button background color to a different color */
 .btn.btn-custom {
-    background-color:  rgb(178, 165, 165); /* Replace with your desired color code */
-    border-color: #your-desired-color; /* Optional: Set border color to match */
+    color: white;
+    background-color:  rgb(178, 165, 165);
 }
 
 .btn-link {
-    background-color: transparent; /* Remove any background color */
-    color: #000; /* Set your desired text color, e.g., black */
-    text-decoration: none; /* Remove underline */
-    font-weight: normal; /* Set the font weight to normal if you don't want bold */
-    font-size: 1em; /* Set an appropriate font size */
-    border: none; /* Remove border */
-    padding: 0; /* Remove padding */
-    transition: color 0.3s ease; /* Smooth transition for hover effect */
+    background-color: transparent;
+    color: #000;
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 1em;
+    border: none;
+    padding: 0;
+    transition: color 0.3s ease;
 }
 
 .btn-link:hover,
 .btn-link:focus {
-    color: #0056b3; /* Set the color for hover and focus */
-    background-color: transparent; /* Ensure background doesn't change on hover */
-    text-decoration: none; /* Ensure text doesn't get underlined on hover */
-    border: none; /* Ensure border doesn't appear on hover */
+    color: #0056b3;
+    background-color: transparent;
+    text-decoration: none;
+    border: none;
 }
-

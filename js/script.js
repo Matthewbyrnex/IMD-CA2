@@ -14,10 +14,8 @@ function showTab(year) {
         tabPane.classList.remove('active');
     });
 
-    // Show the selected tab content
     document.getElementById('list-' + year).classList.add('show', 'active');
 
-    // Update button appearance
     document.querySelectorAll('.years-buttons .btn').forEach(function(btn) {
         btn.classList.remove('active');
     });
@@ -33,15 +31,13 @@ document.addEventListener("DOMContentLoaded", function() {
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                // Add the animation class every time the element comes into view
                 entry.target.classList.add('in-view');
             } else {
-                // Remove the animation class when the element is not in view
                 entry.target.classList.remove('in-view');
             }
         });
     }, {
-        threshold: 0.1 // Adjust if needed for different sensitivity
+        threshold: 0.1 
     });
 
     // Work experience boxes
@@ -68,7 +64,6 @@ function isInViewport(element) {
     );
 }
 
-// Function to add 'in-view' class to elements in the viewport
 function addClassToVisibleBoxes() {
     const boxes = document.querySelectorAll('.experience-box');
     boxes.forEach(box => {
